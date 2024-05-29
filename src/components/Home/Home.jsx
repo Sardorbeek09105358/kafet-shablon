@@ -2,10 +2,9 @@ import React from 'react'
 import Header from './Header'
 import Section from './Section'
 import Content from './content'
-import Videos from './videos'
 import Phone from './Phone'
-import Box from './Box'
 import Footer from './Footer'
+import User from './User'
 
 const Home = () => {
   return (
@@ -13,8 +12,7 @@ const Home = () => {
       <Header />
       <Section />
       <Content />
-      <Videos/>
-      <Box/>
+      <User/>
       <Phone/>
       <Footer />
     </div>

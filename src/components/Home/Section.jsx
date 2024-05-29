@@ -19,13 +19,13 @@ const Section = () => {
     }, [page, limit])
 
     return (
-        <div className='w-full h-[100vh] pt-10'>
+        <div className='w-full pt-10'>
             <div className="w-full">
                 <div className='flex flex-col justify-center mx-auto items-center '>
                     {
                         users.map((item, index) => {
                             return(
-                                <div key={index} className='w-[80%] h-[150px] bg-[#fffff] mb-4 cursor-pointer rounded-lg pl-3 kopyright'>
+                                <div key={index} className='w-[75%] h-[250px] bg-[#fffff] mb-4 cursor-pointer rounded-lg pl-3 kopyright'>
                                     <h1 className='text-[#666] text-[24px] mt-3 capitalize'>{item.title}</h1>
                                 </div>
                             )

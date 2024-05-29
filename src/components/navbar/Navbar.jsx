@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from "../../assets/images/logo_c.jpg";
+import "./Navbar.css";
 
 const Navbar = () => {
     let Links = [
@@ -8,33 +10,42 @@ const Navbar = () => {
         { name: "BLOG'S", link: "/blog" },
         { name: "CONTACT", link: "/contact" },
     ];
+
     let [open, setOpen] = useState(false);
+
     return (
-        <div className='shadow-md w-full fixed top-0 left-0 z-10'>
-            <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-                <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800'>
-                    <NavLink to={"/"} className='text-3xl text-indigo-600 mr-1 pt-2'>
-                        <img src="https://tkti.uz/var/www/tkti_uz/media/image/logos/SAYTGA_Ac1wLUZ.png" alt="" className='w-[50px] h-[50px]' />
-                    </NavLink>
+        <header className="text-gray-600 body-font nav bg-white shadow-md fixed w-full z-10">
+            <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+                <NavLink to={"/"} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img src={logo} alt="" className='w-14' />
+                    <span className="ml-3 text-xl capitalize">cafet</span>
+                </NavLink>
+                <div className="md:hidden ml-auto cursor-pointer" onClick={() => setOpen(!open)}>
+                    <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={open ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
+                    </svg>
                 </div>
-
-                <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-                    <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
-                </div>
-
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
-                    {
-                        Links.map((link) => (
-                            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                                <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
-                            </li>
-                        ))
-                    }
-                </ul>
+                <nav className={`md:ml-auto md:mr-auto flex flex-col md:flex-row items-center text-base justify-center transition-all duration-500 ease-in-out ${open ? 'max-h-screen' : 'max-h-0 md:max-h-full overflow-hidden'}`}>
+                    {Links.map(link => (
+                        <NavLink
+                            key={link.name}
+                            to={link.link}
+                            className="mr-5 hover:text-gray-900 p-2 md:p-0"
+                            onClick={() => setOpen(false)}  // Close the menu on link click
+                        >
+                            {link.name}
+                        </NavLink>
+                    ))}
+                </nav>
+                <button className="inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-indigo-500 hover:border-2 hover:border-indigo-500 rounded text-base mt-4 md:mt-0 bg-indigo-500 text-gray-100 capitalize">
+                    login
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
             </div>
-        </div>
-    )
-}
+        </header>
+    );
+};
 
-export default Navbar
+export default Navbar;
