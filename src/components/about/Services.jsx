@@ -1,43 +1,58 @@
-import React from 'react'
+import React from 'react';
 
 const Services = () => {
   return (
     <div>
-          <section class="text-gray-600 body-font">
-              <div class="container px-5 py-24 mx-auto">
-                  <div class="flex flex-wrap -m-4">
-                      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                          <div class="h-full text-center">
-                              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/302x302"/>
-                                  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
-                                  <p class="text-gray-500">Senior Product Designer</p>
-                          </div>
-                      </div>
-                      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                          <div class="h-full text-center">
-                              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/300x300"/>
-                                  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
-                                  <p class="text-gray-500">UI Develeoper</p>
-                          </div>
-                      </div>
-                      <div class="lg:w-1/3 lg:mb-0 p-4">
-                          <div class="h-full text-center">
-                              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/305x305"/>
-                                  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
-                                  <p class="text-gray-500">CTO</p>
-                          </div>
-                      </div>
-                  </div>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+              <div className="h-full text-center">
+                <p className="leading-relaxed capitalize">
+                  Organizmining rivojlanishi uchun zarur bo‘lgan vitaminlar mikro va makro elementlar yetishmasligi, maktabda o‘qish davomida sarflanadigan energiya manbalari yetarlicha qoplay olinmayapti. Bunday holatlar esa davlatimizning kelajagi bo‘lgan bolalarimizning sog‘liqlariga salbiy ta’sir ko‘rsatmoqda. Bolalar o‘rtasida kamqonlik, avitaminoz, kalsiy, fosfor, yod yetishmovchiligi tufayli ko‘p kasalliklar kelib chiqmoqda.
+                </p>
+                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">
+                  Sanayev Ermat Shermatovich
+                </h2>
+                  <p className="text-gray-500">
+                  Toshkent Kimyo-Texnologiya Instituti Dotsent
+                </p>
               </div>
-          </section> 
+            </div>
+            <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+              <div className="h-full text-center">
+                <p className="leading-relaxed capitalize">
+                  Antioksidant xusuiyatlari ega bo'lgan o'simliklar, moyli urug'liklar, mevalar va sabzavotlar keng ko'lamda o'rganilgan bo'lib, ular nafaqat antikosidant xususiyatiga ega bo'lib, balki antimutagen va antikanserogen xususiyatlari ham namoyish etadi. Rozmarin, shofyo'n va shafley kabi o'tlardagi mavjud fenolli bog'lamalar ayniqsa zo'rmarin karnozol va karnozinova kisloto kabilar o'tlar tarkibidagi moylarni stabillashtradi.
+                </p>
+                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">
+                  Fayzullayeva Nodira Zaynutdinovna
+                </h2>
+                <p className="text-gray-500 capitalize">
+                  Toshkent Kimyo-Texnologiya Instituti Assistent
+                </p>
+              </div>
+            </div>
+            <div className="lg:w-1/3 lg:mb-0 p-4">
+              <div className="h-full text-center">
+                <p className="leading-relaxed">
+                  Maqola qishloq Xojaligi klasterida inson kapitalini rivojlantirishning institutsional jihatlarini tahlil qilishga bag‘ishlangan. Ta’kidlanishicha, import o‘rnini bosish va O‘zbekistonning oziq-ovqat xavfsizligini ta’minlash siyosatini amalga oshirish, shuningdek, 2020 yilda pandemiya ta’sirida yuzaga kelgan inqiroz sharoitida qishloq xo‘jaligi ishlab chiqarish majmuasiga alohida talablar qo‘yila boshlandi.
+                </p>
+                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">
+                  Uzoqova Shirin Ibrohimovna
+                </h2>
+                <p className="text-gray-500 capitalize">
+                  Toshkent Kimyo-Texnologiya Instituti Shahrisabz Filiali Assistent
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;
